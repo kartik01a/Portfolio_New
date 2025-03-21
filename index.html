@@ -38,7 +38,7 @@
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <!-- navbar starts -->
     <nav
       id="navbar-top"
@@ -76,12 +76,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Testimonials</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
           </ul>
         </div>
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+        <a href="#contact" style="text-decoration: none"
+          ><button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+            Contact
+          </button></a
+        >
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -90,21 +91,27 @@
     <section class="home pt-5 pb-5" id="home">
       <div class="row justify-content-evenly align-middle">
         <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
           <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">Pawan Kumavat</span>
+            Hello! I Am <br /><span class="c-orange">Kartik Singh Bisht</span>
           </h2>
           <p class="text-muted">
-            I'm A Web Developer having 5 years of experience in expertise of
-            creating website with fully responsive Also with backend part too.
+            I am a web developer with two years of experience specializing in
+            building websites and applications using Next.js, React, Express.js,
+            MongoDB, and React Native.
           </p>
-          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            Hire Me
-          </button>
+          <a href="#contact" style="text-decoration: none"
+            ><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Hire Me
+            </button></a
+          >
           <a href="" class="link ms-4 d-none">See My Work</a>
         </div>
         <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/banner-01.webp" class="img-fluid" alt="" />
+          <img src="/images/profile.PNG" class="img-fluid" alt="" />
         </div>
       </div>
     </section>
@@ -120,25 +127,6 @@
         </h3>
       </div>
       <div class="row justify-content-evenly mt-5">
-        <div class="col-10 col-md-4" data-aos="fade-up">
-          <div class="service-card">
-            <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
-            </div>
-            <div class="content mt-3">
-              <h4>Web Design</h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
-              </p>
-              <a href="" class="link">Read More</a>
-            </div>
-          </div>
-        </div>
         <div class="col-md-4 col-10" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
@@ -151,10 +139,12 @@
             <div class="content mt-3">
               <h4>Web Development</h4>
               <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
+                I have two years of experience building dynamic and scalable web
+                applications using Next.js, React, Express.js, and MongoDB. My
+                expertise includes front-end and back-end development, ensuring
+                high performance and responsiveness.
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="#portfolio" class="link">Check Portfolio</a>
             </div>
           </div>
         </div>
@@ -168,12 +158,35 @@
               />
             </div>
             <div class="content mt-3">
-              <h4>Debugging</h4>
+              <h4>App Development</h4>
               <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum neces aibus minima veniam.
+                I specialize in developing cross-platform mobile applications
+                using React Native, delivering smooth and intuitive user
+                experiences. My focus is on performance optimization and
+                seamless integration with APIs and databases.
               </p>
-              <a href="" class="link">Read More</a>
+              <a href="#portfolio" class="link">Check Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Payment Gateway Integration</h4>
+              <p class="text-muted">
+                I have hands-on experience integrating payment gateways like
+                Stripe, ensuring secure and efficient transactions. My expertise
+                includes handling subscriptions, proration payments, and
+                webhook-based automation.
+              </p>
+              <a href="#portfolio" class="link">Check Portfolio</a>
             </div>
           </div>
         </div>
@@ -188,40 +201,36 @@
           <div class="row justify-content-evenly">
             <div class="col-10 col-md-6">
               <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
+                <span class="text">NextJs</span>
               </div>
             </div>
             <div class="col-10 col-md-6 mt-4 mt-md-0">
               <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
+                <span class="text">ReactJS</span>
               </div>
             </div>
           </div>
           <div class="row justify-content-evenly mt-4">
             <div class="col-10 col-md-6">
               <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">PHP</span>
+                <span class="text">ExpressJs</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <span class="text">NoSQL / SQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <span class="text">Payment Integration</span>
               </div>
             </div>
             <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3  ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br>
-                <span class="text">ReactJS</span>
+              <div class="progress-card ms-3 ms-md-0">
+                <span class="text">React Native</span>
               </div>
             </div>
           </div>
@@ -230,22 +239,13 @@
           <div class="heading mt-5 mt-md-3">
             <small>My Skills</small>
             <h3>Beautiful & Unique Digital Experiences</h3>
-            <p class="text-muted">
-              Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
-              aliquid exrea commodi consequatur magni dolores aos qui ratione
-              voluptatem nesciunt.
-            </p>
-            <p class="text-muted">
-              Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-              consequntar magni dolores.
-            </p>
             <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               <!-- here download attribute is used for adding download functionality to button  -->
               <a
-                href="Entry Level Web Developer Resume.pdf"
-                download="SampleCV"
-                style="text-decoration: none;color: #fff;"
-                >Download CV</a
+                href="/images/Kartik.pdf"
+                download="Kartik_Resume"
+                style="text-decoration: none; color: #fff"
+                >Download Resume</a
               >
             </button>
           </div>
@@ -260,102 +260,126 @@
         <small>Creative Work</small>
         <h3>Check My Portfolio</h3>
       </div>
-
-      <div id="myBtnContainer" class="text-center mt-4">
-        <!-- here we will create custom attribute using data- for filtering -->
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="game">Game</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="website">Website</button>
-        <button class="filter-item" data-filter="brand">Brand</button>
-      </div>
       <div class="portfolio-body">
-        <div class="row justify-content-evenly px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="row justify-content-evenly" style="margin-top: 40px">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
             <div class="card">
-              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <img src="images/todai.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">2048 Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                <h4 class="card-title">Todai</h4>
+                <span class="badge bg-secondary badge-pill">NextJs</span>
+                <span class="badge bg-secondary badge-pill">Stripe</span>
+                <span class="badge bg-secondary badge-pill mb-2">OpenAI</span
                 ><br />
-                <a href="#" class="link">Read More</a>
+                <a href="https://www.usetodai.com/" target="_blank" class="link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
             <div class="card">
-              <img
-                src="images/currency-converter.png"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="images/dollarSeo.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">Converter App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                <h4 class="card-title">Dollar Seo</h4>
+                <span class="badge bg-secondary badge-pill">NextJs</span>
+                <span class="badge bg-secondary badge-pill"
+                  >Proration Subscription</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                <a
+                  href="https://www.dollarseo.club/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
-          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div
+            class="post col-md-4 webapp all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
             <div class="card">
-              <img src="images/dictionary.png" class="card-img-top" alt="..." />
+              <img src="images/montreal.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">Dictionary</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
-                ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                <h4 class="card-title">Montreal Tire</h4>
+                <span class="badge bg-secondary badge-pill">NextJs</span>
+                <span class="badge bg-secondary badge-pill">Filters</span><br />
+                <a
+                  href="https://montrealtire.us/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-evenly mt-4 px-4">
-          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="row justify-content-evenly mt-4 px-8">
+          <div
+            class="post col-md-4 game all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
             <div class="card">
-              <img src="images/piceditor.png" class="card-img-top" alt="..." />
+              <img src="images/sharps.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">PicEditor App</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">App</span
+                <h4 class="card-title">Sharps Bet</h4>
+                <span class="badge bg-secondary badge-pill">ReactJs</span>
+                <span class="badge bg-secondary badge-pill">Supabase</span>
+                <span class="badge bg-secondary badge-pill mb-2"
+                  >Figma to Code</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                <a
+                  href="https://sharps.bet/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
-          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div
+            class="post col-md-4 website all col-10 mt-3 mt-md-0"
+            data-aos="fade-up"
+          >
             <div class="card">
-              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
+              <img src="images/spotlight.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">TicTacToe Game</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                <h4 class="card-title">Spotlight Admin Panel</h4>
+                <span class="badge bg-secondary badge-pill">ReactJs</span>
+                <span class="badge bg-secondary badge-pill">ExpressJs</span>
+                <span class="badge bg-secondary badge-pill mb-2">Analytics</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                <a
+                  href="https://admin-lift.vercel.app"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
           <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
             <div class="card">
-              <img
-                src="images/lang-translator.png"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="images/formworks.jpeg" class="card-img-top" alt="..." />
               <div class="card-body text-center">
-                <h4 class="card-title">Lang Translator</h4>
-                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
-                <span class="badge bg-secondary badge-pill">JavaScript</span>
-                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                <h4 class="card-title">Formworks</h4>
+                <span class="badge bg-secondary badge-pill">ReactJs</span>
+                <span class="badge bg-secondary badge-pill">ExpressJs</span>
+                <span class="badge bg-secondary badge-pill mb-2">MongoDb</span
                 ><br />
-                <a href="#" class="read-more-btn link">Read More</a>
+                <a
+                  href="https://formworks.ai/"
+                  target="_blank"
+                  class="read-more-btn link"
+                  >Check Website</a
+                >
               </div>
             </div>
           </div>
@@ -365,7 +389,11 @@
     <!-- portfolio section ends here -->
 
     <!-- testimonial section starts  -->
-    <section class="testimonial mt-5 pt-5" id="testimonial">
+    <section
+      class="testimonial mt-5 pt-5"
+      style="margin-bottom: 2rem"
+      id="testimonial"
+    >
       <div class="row justify-content-evenly">
         <div class="col-md-4 col-10" data-aos="slide-right">
           <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
@@ -374,7 +402,6 @@
           <div class="heading">
             <small>Testimonials</small>
             <h3>Happy Clients Feedback</h3>
-            <!-- here we will use carousel element from bootstrap -->
             <div
               id="carouselExampleControls"
               class="carousel slide"
@@ -388,11 +415,12 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
+                        He is really good and understanding and adjustable
+                        person. He will be able to complete the task on time
+                        even if any of the components are not known by him. He
+                        learns and completes the project on time.
                       </p>
-                      <h4>Kevin Andrew</h4>
+                      <h4>Client</h4>
                       <small class="fs-6 text-muted">CEO of Company</small>
                     </div>
                   </div>
@@ -404,28 +432,14 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
+                        Kartik has done fantastic job, I need to scrape
+                        Walmart's all products. He has provided all scraped
+                        products in Excel as well as in database. He has
+                        provided Python script so we can scape products in
+                        future also.
                       </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-evenly">
-                    <div class="col-2 text-center">
-                      <i class="bi bi-quote"></i>
-                    </div>
-                    <div class="col-10">
-                      <p class="text-muted">
-                        Quisruam est, qui dolorem ipsum quia dolor sit amet,
-                        consecteaur aeci velit, sed quia non numquam eius modi
-                        tempora incidunt ut lao magnam aliquam quaerat ...
-                      </p>
-                      <h4>Kevin Andrew</h4>
-                      <small class="fs-6 text-muted">CEO of Company</small>
+                      <h4>Client</h4>
+                      <small class="fs-6 text-muted">Individual</small>
                     </div>
                   </div>
                 </div>
@@ -455,297 +469,6 @@
     </section>
     <!-- testimonial ends here -->
 
-    <!-- blog section starts -->
-    <section class="blog mt-5 pb-5" id="blog">
-      <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Blog & Articles</h3>
-      </div>
-      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
-        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
-          <div class="card">
-            <img
-              src="images/2048game.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
-          <div class="card">
-            <img
-              src="images/currency-converter.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
-          <div class="card">
-            <img
-              src="images/dictionary.png"
-              class="card-img-top rounded-4"
-              alt="..."
-            />
-            <div class="card-body px-4">
-              <small>By Pawan Kumavat</small
-              ><span class="ms-3">Mar 8,2022</span>
-              <h4 class="card-title">
-                <a href="">Quis autem vea eum iure reprehenderit</a>
-              </h4>
-              <p class="text-muted">
-                Dolor repellendus temporibus autem quibusdam officiis debitis
-                rerum nece aibus minima veniam.
-              </p>
-              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
-            </div>
-          </div>
-        </div>
-        <!-- here we will make modals if Read more link is clicked the modal will popup -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/2048game.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/currency-converter.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              
-                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
-              
-              <div class="modal-body px-4">
-                <div class="img">
-                  <img src="images/dictionary.png" class="img-fluid" alt="">
-                </div>
-                <div class="content mt-3">
-                  <small>By Pawan Kumavat</small
-                    ><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
-                  <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
-                  <div class="social-links mt-4">
-                      <button href="" class="rounded-pill dribble">
-                        <i class="bi bi-dribbble"></i>
-                      </button>
-                      <button href="" class="rounded-pill whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                      </button>
-                      <button href="" class="rounded-pill behance">
-                        <i class="bi bi-behance"></i>
-                      </button>
-                  </div>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin. Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
-                </div>
-              </div>
-              <div class="heading px-2">
-                <h3 class="fs-3 ms-3">Leave A Comment</h3>
-              </div>
-              <div class="contact-form ms-3 mt-3 pb-4 px-2">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="E-mail"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Mobile No."
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Message"
-                    rows="5"
-                  ></textarea>
-                </div>
-                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
-                  Submit
-                </button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog section ends here -->
-
     <!-- contact section starts -->
     <section class="contact py-5" id="contact">
       <div class="heading text-center">
@@ -759,7 +482,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </div>
             <div class="col-11">
-              <p>121 King Street Melbourne, 3000, Australia</p>
+              <p>V-3, TDI City, Sector - 118, Mohali, Chandigarh</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -767,7 +490,7 @@
               <i class="bi bi-telephone-fill"></i>
             </div>
             <div class="col-11">
-              <p>+91 9527818693</p>
+              <p>+91 9351972847</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -775,15 +498,7 @@
               <i class="bi bi-send-fill"></i>
             </div>
             <div class="col-11">
-              <p>codewithpawan@gmail.com</p>
-            </div>
-          </div>
-          <div class="row justify-content-evenly">
-            <div class="col-1">
-              <i class="bi bi-globe-americas"></i>
-            </div>
-            <div class="col-11">
-              <p>codingpawan.com</p>
+              <p>kartiksinghbisht1@gmail.com</p>
             </div>
           </div>
         </div>
@@ -830,7 +545,7 @@
     </section>
     <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
     <button
       type="button"
       class="btn btn-floating btn-lg rounded-pill"
@@ -851,8 +566,6 @@
         <div class="vr"></div>
         <a href="#portfolio">Portfolio</a>
         <div class="vr"></div>
-        <a href="#blog">Blog</a>
-        <div class="vr"></div>
         <a href="#contact">Contact</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
@@ -872,7 +585,7 @@
     </footer>
     <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
+    <!-- bootstrap javascript cdn link  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -890,6 +603,5 @@
     </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
-    
   </body>
 </html>
